@@ -22,13 +22,6 @@
   }
 }
 @media (max-width: 400px) {
-  :root {
-    font-size: 11px !important;
-  }
-  .modif {
-    padding-bottom: 0 !important;
-    box-sizing: content-box;
-  }
   .kartunama {
     padding-bottom: 20rem;
   }
@@ -50,7 +43,7 @@
     display: none !important;
   }
   .modif {
-    padding-bottom: 5rem;
+    padding-bottom: 9rem;
     padding-top: 5rem;
     box-sizing: content-box;
   }
