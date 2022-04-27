@@ -754,7 +754,6 @@ section {
   position: relative;
   gap: 1rem;
 }
-
 section .container {
   width: min(80rem, 90vw);
   text-align: center;
@@ -765,7 +764,6 @@ section .container {
   position: relative;
   row-gap: 1rem;
 }
-
 section .container .nav-button {
   padding: 0.6rem 1rem;
   font-family: "Poppins";
@@ -776,39 +774,31 @@ section .container .nav-button {
   border: none;
   border-radius: 5px;
 }
-
 section .container .nav-button:active {
   background-color: #232323;
 }
-
 section .container .nav-button:hover {
   background-color: #3d3d3d;
 }
-
 section .container.no-gap {
   row-gap: 0.3rem;
 }
-
 section .container.fluid {
   width: min(100rem, 95vw);
 }
-
 section .container.large-gap {
   row-gap: 3rem;
 }
-
 section .container h1 {
   color: var(--text-color, black);
   font-size: 5rem;
 }
-
 section .container .lead {
   color: var(--text-color, black);
   font-size: 1.1rem;
   font-weight: 300;
   font-family: "Poppins";
 }
-
 section.circle-bottom::after {
   content: "";
   width: 100%;
@@ -818,11 +808,9 @@ section.circle-bottom::after {
   bottom: -1px;
   background: radial-gradient(100vw 100% at bottom, var(--next-color, white) 0, var(--next-color, white) 55%, transparent calc(55% + 5px), transparent);
 }
-
 section.circle-top, section.cutting-edge {
   padding-bottom: 15rem;
 }
-
 section.circle-top::after {
   content: "";
   width: 100%;
@@ -832,7 +820,6 @@ section.circle-top::after {
   bottom: -1px;
   background: radial-gradient(100vw 100% at top, transparent 0, transparent 55%, var(--next-color, white) calc(55% + 5px), var(--next-color, white));
 }
-
 section.cutting-edge::after {
   content: "";
   width: 100%;
@@ -840,7 +827,7 @@ section.cutting-edge::after {
   display: block;
   position: absolute;
   bottom: -1px;
-  background: linear-gradient(to var(--end, left top), var(--next-color, white) 50%, transparent calc(50% + 3px), transparent);
+  background: linear-gradient(to left top, var(--next-color, white) 50%, transparent calc(50% + 3px), transparent);
 }
 
 /*# sourceMappingURL=/about.d44d7e9c.css.map */
