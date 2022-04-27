@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/add302fba6.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signup.5ca40cbe.css">
+    <script src="https://kit.fontawesome.com/add302fba6.js" crossorigin="anonymous"></script>
+  <script src="/signup.5ca40cbe.js"></script></head>
+  <body>
+    
+    <div class="backdrop"></div>
+    <div class="navbar border-1">
+      <div class="navbar-brand">
+        <i class="fa-solid fa-bars font-inherit d-none-large" onclick="window.toggle('.sidebar'); toggle('.backdrop');" style="margin-right: 1.7rem; margin-top: 0.5rem"></i>
+        <div style="display: flex" onclick="location.href = '/App.html';">
+          <span style="align-items: flex-start; font-size: 28px">Slipp</span>
+          <h2 style="align-items: flex-start; margin-top: -5px">y</h2>
+          <span style="align-items: flex-end; font-size: 28px; margin-top: 15px">Dripp</span>
+        </div>
+      </div>
+      <div class="links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/App.html">Store</a></li>
+        <div style="position: relative">
+          <li onclick="window.toggle('#menu-sort-3')"><a href="#">Other</a></li>
+          <div class="menu-list" id="menu-sort-3">
+            <li class="active"><a href="/cart.html">Cart</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div style="position: relative" class="truncate">
+          <input type="text" class="search-bar" placeholder="Black Sneakers">
+          <i class="fa-solid fa-magnifying-glass search-icon font-inherit" id="search-icon"></i>
+        </div>
+        <a class="nav-button d-none-small" onclick="window.buttonRiple(event)" href="/login.html">
+          Login
+        </a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="accordion">
+        <a class="accordion-head" href="/index.html">Home</a>
+        <a class="accordion-head" href="/about.html">About Us</a>
+        <a class="accordion-head" href="/App.html">App</a>
+        <div class="accordion-head collapse">
+          Others
+          <i class="fa-solid fa-angle-down font-inherit"></i>
+        </div>
+        <div class="accordion-body">
+          <a class="accordion-item active" href="/cart.html">Cart</a>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="box black">
+          <div class="content">
+            <div class="title">
+              <div class="iconbox">
+                <i class="fa-solid fa-lightbulb font-inherit"></i>
+              </div>
+              Need Help
+            </div>
+            <div class="text">
+              Visit Our Contact Page. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+            </div>
+          </div>
+          <div class="box blue"></div>
+          <div class="box orange"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flexible">
+    <div class="parts part-1"></div>
+    <div class="parts part-2">
+      <img src="/logo.94702828.png" class="logo" alt="">
+    </div>
+    <div class="center">
+      <div class="big-label">Sign Up</div>
+      <form name="fform" id="fform1">
+        <div id="container1" class="container1">
+          <div class="flex gap-1">
+            <div class="flex-column">
+              <div class="label">First Name<span class="merah">*</span></div>
+              <div class="input">
+                <input id="first" type="text" placeholder="First name" required="" class="data" maxlength="10" pattern="(?=.*[a-z])(?=.*[A-Z])(^[^0-9]+$)">
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="label">Last Name<span class="merah">*</span></div>
+              <div class="input">
+                <input id="last" type="text" placeholder="Last Name" required="" class="data" maxlength="10" pattern="(?=.*[a-z])(?=.*[A-Z])(^[^0-9]+$)">
+              </div>
+            </div>
+          </div>
+
+          <div class="label">Password<span class="merah">*</span></div>
+          <div class="input input-group">
+            <input type="password" id="typepass1" name="pass" placeholder="Password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*_=+-]).{1,}" minlength="8">
+            <div class="flex gap-1 absolute-right">
+              <input type="checkbox" id="showPass" name="showPass" onclick="toggle1()">
+              <label for="showPass" class="input-group-text">Show</label>
+            </div>
+          </div>
+          <div id="phones">
+            <div class="label">Phone Number<span class="merah">*</span></div>
+            <div class="input">
+              <input type="text" id="phone" onkeypress="preventstring(event)" name="phone" maxlength="15" minlength="5" required="" placeholder="Phone Number" pattern="(^[^qwerrtyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM]+$)" oninput="format(event)">
+            </div>
+          </div>
+          <div id="emails" class="d-none">
+            <div class="label">Email<span class="merah">*</span></div>
+            <div class="input">
+              <input type="email" id="email" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="label">Date of Birth<span class="merah">*</span></div>
+          <div class="flex gap-1">
+            <div class="input">
+              <input type="number" pattern="^[0-9]+$" id="date" maxlength="2" minlength="1" required="" max="31" min="1" placeholder="Date">
+            </div>
+            <div class="input">
+              <input type="number" pattern="^[0-9]+$" id="month" maxlength="2" minlength="1" required="" max="12" min="1" placeholder="Month">
+            </div>
+            <div class="input" style="flex: 2">
+              <input type="number" pattern="^[0-9]+$" id="year" maxlength="4" minlength="4" min="1920" required="" max="2022" placeholder="Year">
+            </div>
+          </div>
+          <div class="label">Gender<span class="merah">*</span></div>
+          <div class="flex" style="margin-bottom: 1rem">
+            <div class="flex mw-60" style="margin-top: 0.5rem">
+              <input type="radio" id="male" name="gender" value="male">
+              <label class="radlab" for="male">Male</label><br>
+            </div>
+            <div class="flex mw-60" style="margin-top: 0.5rem">
+              <input type="radio" id="female" name="gender" value="female">
+              <label class="radlab" for="female">Female</label><br>
+            </div>
+          </div>
+          <div>
+            <button class="nav-button button" type="submit" onclick="myFunction(event)" style="padding: 0.2rem">
+              Sign in
+            </button>
+          </div>
+          <div>
+            <button class="nav-button button" type="submit" onclick="toggle2(event)" style="padding: 0.2rem; margin-top: 0.25rem">
+              Use Email
+            </button>
+          </div>
+          <br>
+          <div class="flex" style="justify-content: center; flex-direction: column">
+            <b>Already have an account </b>
+            <div style="display: flex; gap: 0.7rem">
+              <a href="/login.html">Log in</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+    <script src="/signup.ec242aaf.js"></script>
+    <script src="/navbarSidebar.7c751bc0.js"></script>
+  </body>
+</html>

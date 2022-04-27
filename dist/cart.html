@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/cart.528fb5d0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/add302fba6.js" crossorigin="anonymous"></script>
+  <script src="/cart.528fb5d0.js"></script></head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="navbar border-1">
+      <div class="navbar-brand">
+        <i class="fa-solid fa-bars font-inherit d-none-large" onclick="window.toggle('.sidebar'); toggle('.backdrop');" style="margin-right: 1.7rem; margin-top: 0.5rem"></i>
+        <div style="display: flex" onclick="location.href = '/App.html';">
+          <span style="align-items: flex-start">Slipp</span>
+          <h2 style="align-items: flex-start; margin-top: -5px">y</h2>
+          <span style="align-items: flex-end; margin-top: 15px">Dripp</span>
+        </div>
+      </div>
+      <div class="links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/App.html">Store</a></li>
+        <div style="position: relative">
+          <li onclick="window.toggle('#menu-sort-3')"><a href="#">Other</a></li>
+          <div class="menu-list" id="menu-sort-3">
+            <li class="active"><a href="/cart.html">Cart</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div style="position: relative" class="truncate">
+          <input type="text" class="search-bar" placeholder="Black Sneakers">
+          <i class="fa-solid fa-magnifying-glass search-icon font-inherit" id="search-icon"></i>
+        </div>
+        <a class="nav-button d-none-small" onclick="window.buttonRiple(event)" href="/login.html">
+          Login
+        </a>
+        <div style="position: relative" onclick="location.href = '/cart.html';" class="d-none-small">
+          <i class="fa-solid fa-bag-shopping font-inherit has-badge"></i>
+          <div class="badge">3</div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="accordion">
+        <a class="accordion-head" href="/index.html">Home</a>
+        <a class="accordion-head" href="/about.html">About Us</a>
+        <a class="accordion-head" href="/App.html">App</a>
+        <div class="accordion-head collapse">
+          Others
+          <i class="fa-solid fa-angle-down font-inherit"></i>
+        </div>
+        <div class="accordion-body">
+          <a class="accordion-item active" href="/cart.html">Cart</a>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="box black">
+          <div class="content">
+            <div class="title">
+              <div class="iconbox">
+                <i class="fa-solid fa-lightbulb font-inherit"></i>
+              </div>
+              Need Help
+            </div>
+            <div class="text">
+              Visit Our Contact Page. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+            </div>
+          </div>
+          <div class="box blue"></div>
+          <div class="box orange"></div>
+        </div>
+      </div>
+    </div>
+    <h1 style="text-align: center; font-family: 'Poppins'; font-weight: 900">
+      Cart
+    </h1>
+    <div class="flex">
+      <form>
+        <div class="barco72">
+          <table>
+            <tr>
+              <td>Product</td>
+              <td style="text-align: center">Price</td>
+              <td style="text-align: center">Quantity</td>
+              <td style="text-align: right">Subtotal</td>
+            </tr>
+            <tr>
+              <td><li>Sepatu</li></td>
+              <td style="text-align: center" id="harga1">$99</td>
+              <td style="text-align: center">
+                <input type="number" id="sepatu1" class="kuantiti" value="1">
+              </td>
+              <td style="text-align: right"><p id="subtotal1"></p></td>
+            </tr>
+            <tr>
+              <td><li>Sepatu</li></td>
+              <td style="text-align: center" id="harga2">$99</td>
+              <td style="text-align: center">
+                <input type="number" id="sepatu2" class="kuantiti" value="1">
+              </td>
+              <td style="text-align: right"><p id="subtotal2"></p></td>
+            </tr>
+            <tr>
+              <td><li>Sepatu</li></td>
+              <td style="text-align: center" id="harga3">$99</td>
+              <td style="text-align: center">
+                <input type="number" id="sepatu3" class="kuantiti" value="1">
+              </td>
+              <td style="text-align: right"><p id="subtotal3"></p></td>
+            </tr>
+          </table>
+        </div>
+        <h3 id="jumlah_harga" style="
+            text-align: right;
+            margin-left: auto;
+            font-family: 'Poppins';
+            font-weight: 500;
+          ">
+          Subtotal:
+        </h3>
+        <input type="reset" onclick="beli()" value="Checkout" class="tombol">
+      </form>
+    </div>
+    <script src="/navbarSidebar.7c751bc0.js"></script>
+    <script src="/scripts.bcf3243b.js"></script>
+  </body>
+</html>

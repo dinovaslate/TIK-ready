@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/landing.scss" />
+    <script
+      src="https://kit.fontawesome.com/add302fba6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="navbar border-1">
+      <div class="navbar-brand">
+        <i
+          class="fa-solid fa-bars font-inherit d-none-large"
+          onclick="window.toggle('.sidebar'); toggle('.backdrop');"
+          style="margin-right: 1.7rem; margin-top: 0.5rem"
+        ></i>
+        <div style="display: flex" onclick="location.href = '/App.html';">
+          <span style="align-items: flex-start; font-size: 28px">Slipp</span>
+          <h2 style="align-items: flex-start; margin-top: -5px">y</h2>
+          <span style="align-items: flex-end; font-size: 28px; margin-top: 15px"
+            >Dripp</span
+          >
+        </div>
+      </div>
+      <div class="links">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="App.html">Store</a></li>
+        <div style="position: relative">
+          <li onclick="window.toggle('#menu-sort-3')"><a href="#">Other</a></li>
+          <div class="menu-list" id="menu-sort-3">
+            <li ><a href="cart.html">Cart</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div style="position: relative" class="truncate">
+          <input type="text" class="search-bar" placeholder="Black Sneakers" />
+          <i
+            class="fa-solid fa-magnifying-glass search-icon font-inherit"
+            id="search-icon"
+          ></i>
+        </div>
+        <a
+          class="nav-button d-none-small"
+          onclick="window.buttonRiple(event)"
+          href="login.html"
+        >
+          Login
+        </a>
+        <div style="position: relative" onclick="location.href = '/cart.html';" class="d-none-small">
+          <i class="fa-solid fa-bag-shopping font-inherit has-badge"></i>
+          <div class="badge">3</div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="accordion">
+        <a class="accordion-head active" href="index.html">Home</a>
+        <a class="accordion-head" href="about.html">About Us</a>
+        <a class="accordion-head" href="App.html">App</a>
+        <div class="accordion-head collapse">
+          Others
+          <i class="fa-solid fa-angle-down font-inherit"></i>
+        </div>
+        <div class="accordion-body">
+          <a class="accordion-item active" href="cart.html">Cart</a>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="box black">
+          <div class="content">
+            <div class="title">
+              <div class="iconbox">
+                <i class="fa-solid fa-lightbulb font-inherit"></i>
+              </div>
+              Need Help
+            </div>
+            <div class="text">
+              Visit Our Contact Page. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+            </div>
+          </div>
+          <div class="box blue"></div>
+          <div class="box orange"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="part-1">
+        <div class="content">
+          <div class="title">
+            <span>Buy</span><br />
+            <span>Premium Shoes</span> <span>Cheap</span>
+          </div>
+          <div class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, error. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Laborum, facere? Lorem ipsum dolor sit amet.
+          </div>
+          <div class="price">From $520</div>
+          <div class="button-large" onclick="buttonRiple(event, '#ccc')">
+            Shop Now
+          </div>
+        </div>
+      </div>
+      <div class="part-2">
+        <img src="static/logo.png" alt="" class="logo-image" />
+        <img
+          src="static/Screenshot_2022-04-16_145033-removebg-preview.png"
+          class="image"
+        />
+        <div class="cards">
+          <div class="card active" onclick="ripple(this, event, 100, '#fff6' )">
+            <img
+              src="static/nike_adapt_bb_01_--__w_760_-removebg-preview.png"
+            />
+          </div>
+          <div class="card" onclick="ripple(this, event, 100, '#fff6' )">
+            <img
+              src="static/Screenshot_2022-04-16_143442-removebg-preview.png"
+            />
+          </div>
+          <div class="card" onclick="ripple(this, event, 100, '#fff6' )">
+            <img
+              src="static/Screenshot_2022-04-16_143449-removebg-preview.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer d-none">
+      <img src="static/download (12).jpg" alt="" />
+
+      <div class="socials">
+        <li class="social-item">Facebook</li>
+        <li class="social-item">Instagram</li>
+        <li class="social-item">Youtube</li>
+        <li class="social-item">Twitter</li>
+      </div>
+      <div class="explore" onclick="ripple(this, event, 100, '#fff6' )">
+        <span style="cursor: pointer;" onclick="location.href = '/App.html';">Explore More -></span>
+      </div>
+    </div>
+    <script src="scripts/navbarSidebar.js"></script>
+  </body>
+</html>

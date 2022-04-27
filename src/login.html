@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/add302fba6.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/login.scss">
+  </head>
+  <body>
+    
+    <div class="backdrop"></div>
+    <div class="navbar border-1">
+      <div class="navbar-brand">
+        <i
+          class="fa-solid fa-bars font-inherit d-none-large"
+          onclick="window.toggle('.sidebar'); toggle('.backdrop');"
+          style="margin-right: 1.7rem; margin-top: 0.5rem"
+        ></i>
+        <div style="display: flex" onclick="location.href = '/App.html';">
+          <span style="align-items: flex-start;">Slipp</span>
+          <h2 style="align-items: flex-start; margin-top: -5px">y</h2>
+          <span style="align-items: flex-end;margin-top: 15px"
+            >Dripp</span
+          >
+        </div>
+      </div>
+      <div class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="App.html">Store</a></li>
+        <div style="position: relative">
+          <li onclick="window.toggle('#menu-sort-3')"><a href="#">Other</a></li>
+          <div class="menu-list" id="menu-sort-3">
+            <li class="active"><a href="cart.html">Cart</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div style="position: relative" class="truncate">
+          <input type="text" class="search-bar" placeholder="Black Sneakers" />
+          <i
+            class="fa-solid fa-magnifying-glass search-icon font-inherit"
+            id="search-icon"
+          ></i>
+        </div>
+        <a
+          class="nav-button d-none-small"
+          href="signup.html"
+          onclick="window.buttonRiple(event)"
+        >
+          Sign Up
+        </a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="accordion">
+        <a class="accordion-head" href="index.html">Home</a>
+        <a class="accordion-head" href="about.html">About Us</a>
+        <a class="accordion-head" href="App.html">App</a>
+        <div class="accordion-head collapse">
+          Others
+          <i class="fa-solid fa-angle-down font-inherit"></i>
+        </div>
+        <div class="accordion-body">
+          <a class="accordion-item active" href="cart.html">Cart</a>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="box black">
+          <div class="content">
+            <div class="title">
+              <div class="iconbox">
+                <i class="fa-solid fa-lightbulb font-inherit"></i>
+              </div>
+              Need Help
+            </div>
+            <div class="text">
+              Visit Our Contact Page. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+            </div>
+          </div>
+          <div class="box blue"></div>
+          <div class="box orange"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flexible">
+    <div class="parts part-1"></div>
+    <div class="parts part-2">
+      <img src="static/logo.png" class="logo" alt="">
+    </div>
+    <div class="center">
+      <div class="big-label">
+        Sign In
+      </div>
+      <form
+        name="fform"
+        id="fform1"
+      >
+        <div id="container1" class="container1">
+          <div class="label">Username<span class="merah">*</span></div>
+          <div class="input">
+            <input
+              id="userd"
+              type="text"
+              placeholder="Username"
+              required
+              class="data"
+              maxlength="10"
+            />
+          </div>
+          <div class="label mt-1">Password<span class="merah">*</span></div>
+          <div class="input input-group">
+            <input
+              type="password"
+              id="typepass1"
+              name="pass"
+              placeholder="Password"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{1,}"
+              minlength="8"
+            />
+            <div class="flex gap-1 absolute-right">
+            <input
+              type="checkbox"
+              id="showPass"
+              name="showPass"
+              onclick="window.toggle1()"
+            />
+            <label for="showPass" class="input-group-text" >Show</label>
+          </div>
+
+          </div>
+          <div>
+            <button
+              class="nav-button button"
+              type="submit"
+              onclick="window.myFunction(event)"
+              style="padding: 0.2rem"
+            >
+              Sign in
+            </button>
+          </div>
+          <br>
+         <div class="flex" style="justify-content: center; flex-direction: column;">
+          <b>Don't have an account yet? </b>
+          <div style="display: flex; gap: 0.7rem;">
+            <a href="signup.html">Sign up</a>
+            <a href="">Forgot password</a></div>
+        </div>
+         </div>
+      </form>
+      <div class="spacer"></div>
+    </div>
+  </div>
+    <script src="scripts/navbarSidebar.js"></script>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>

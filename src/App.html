@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.scss" />
+    <script
+      src="https://kit.fontawesome.com/add302fba6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="backdrop beta"></div>
+    <div class="modal-search">
+      <input type="text" name="" placeholder="Search something" id="" />
+    </div>
+    <div class="navbar border-1">
+      <div class="navbar-brand">
+        <i
+          class="fa-solid fa-bars font-inherit d-none-large"
+          onclick="window.toggle('.sidebar'); toggle('.backdrop');"
+          style="margin-right: 1.7rem; margin-top: 1rem"
+        ></i>
+        <div style="display: flex" onclick="location.href = '/App.html';">
+          <span style="align-items: flex-start; font-size: 28px">Slipp</span>
+          <h2 style="align-items: flex-start; margin-top: -5px">y</h2>
+          <span style="align-items: flex-end; font-size: 28px; margin-top: 15px"
+            >Dripp</span
+          >
+        </div>
+      </div>
+      <div style="position: relative" class="truncate">
+        <input type="text" class="search-bar" placeholder="Black Sneakers" />
+        <i class="fa-solid fa-magnifying-glass search-icon font-inherit"></i>
+      </div>
+      <div class="right-nav">
+        <i
+          class="fa-solid fa-magnifying-glass d-none-large font-inherit"
+          onclick="toggle('.truncate'); toggle('.navbar-brand'); window.buttonRiple(event)"
+        ></i>
+        <a
+          class="nav-button d-none-small"
+          onclick="window.buttonRiple(event)"
+          href="login.html"
+        >
+          Login
+        </a>
+        <i
+          class="fa-solid fa-arrow-right-to-bracket font-inherit d-block-small"
+        ></i>
+        <div class="sort" onclick="window.toggle('#menu-sort-3')">
+          <i
+            class="fa-solid fa-ellipsis-vertical font-inherit"
+            style="margin-top: 2px"
+          ></i>
+          <div class="menu-list right" id="menu-sort-3">
+            <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cart.html">Cart</a></li>
+          </div>
+        </div>
+        <div style="position: relative" onclick="location.href = '/cart.html';" class="d-none-small">
+          <i class="fa-solid fa-bag-shopping font-inherit has-badge"></i>
+          <div class="badge">3</div>
+        </div>
+        <img class="avatar bordered" src="static/avatar.jpg" />
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="accordion">
+        <div class="accordion-head">
+          Categories
+          <i onclick="window.location.href='/cart.html'" class="fa-solid fa-angle-down font-inherit"></i>
+        </div>
+        <div class="accordion-body">
+          <input
+            type="checkbox"
+            data-filter-type="type"
+            data-filter-name="Flip flops"
+            onchange="handleChange(this)"
+            id="vehicle1"
+            name="vehicle1"
+            value="Bike"
+          />
+          <label for="vehicle1"> Flip flops</label><br />
+          <input
+            type="checkbox"
+            onchange="handleChange(this)"
+            id="sneakers"
+            data-filter-type="type"
+            data-filter-name="sneakers"
+            name="vehicle2"
+            value="Car"
+          />
+          <label for="vehicle2"> Sneakers</label><br />
+          <input
+            type="checkbox"
+            data-filter-type="type"
+            data-filter-name="Lace up Shoes"
+            onchange="handleChange(this)"
+            id="vehicle3"
+            name="vehicle3"
+            value="Boat"
+          />
+          <label for="vehicle3"> Lace-up Shoes</label><br />
+        </div>
+        <div class="accordion-head">
+          Brand
+          <i class="fa-solid fa-angle-down font-inherit"></i>
+        </div>
+        <div class="accordion-body">
+          <input
+            type="checkbox"
+            data-filter-type="brand"
+            data-filter-name="Nike"
+            onchange="handleChange(this)"
+            id="Nike"
+            name="Nike"
+            value="Bike"
+          />
+          <label for="Nike"> Nike</label><br />
+          <input
+            type="checkbox"
+            data-filter-type="brand"
+            data-filter-name="Adidas"
+            onchange="handleChange(this)"
+            id="vehicle2"
+            name="vehicle2"
+            value="Car"
+          />
+          <label for="vehicle2"> Adidas</label><br />
+          <input
+            type="checkbox"
+            data-filter-type="brand"
+            data-filter-name="Rebook"
+            onchange="handleChange(this)"
+            id="vehicle3"
+            name="vehicle3"
+            value="Boat"
+          />
+          <label for="vehicle3"> Rebook</label><br />
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <div class="sidebar-item-title">Price Range</div>
+        <div class="container">
+          <div class="values" id="label-1">0</div>
+          <div class="values" id="label-2">0</div>
+          <div class="slider-track"></div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="100"
+            id="slider-1"
+            oninput="window.slideOne(event)"
+          />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="slider-2"
+            oninput="window.slideTwo(event)"
+          />
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <div class="sidebar-item-title">Size</div>
+        <div class="grid col-5" id="filterSize">
+          <div class="grid-item">35</div>
+          <div class="grid-item">36</div>
+          <div class="grid-item">37</div>
+          <div class="grid-item">38</div>
+          <div class="grid-item">39</div>
+          <div class="grid-item">40</div>
+          <div class="grid-item">41</div>
+          <div class="grid-item">42</div>
+          <div class="grid-item">43</div>
+          <div class="grid-item">44</div>
+          <div class="grid-item">45</div>
+          <div class="grid-item">46</div>
+          <div class="grid-item">47</div>
+          <div class="grid-item">48</div>
+          <div class="grid-item">49</div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <div class="box black">
+          <div class="content">
+            <div class="title">
+              <div class="iconbox">
+                <i class="fa-solid fa-lightbulb font-inherit"></i>
+              </div>
+              Need Help
+            </div>
+            <div class="text">
+              Visit Our Contact Page. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+            </div>
+          </div>
+          <div class="box blue"></div>
+          <div class="box orange"></div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="flex-title">
+        <div class="title">Best Sellers</div>
+      </div>
+      <div class="flex-card"></div>
+      <div class="flex-title">
+        <div class="title">New Arrival</div>
+        <div class="sort" onclick="window.toggle('#menu-sort')">
+          <span id="title-1" onclick="window.buttonRiple(event)"
+            >Sort By Price</span
+          >
+          <i class="fa-solid fa-angle-down font-inherit"></i>
+          <div class="menu-list" id="menu-sort" has-title="#title-1">
+            <li data-sort="name" class="sortable">Sort by Name</li>
+            <li data-sort="price" class="sortable">Sort by Price</li>
+          </div>
+        </div>
+      </div>
+      <div class="card-grid"></div>
+    </div>
+    <div class="look-out">
+      <i
+        class="fa-solid fa-square-xmark font-inherit close-btn fa-2x"
+        onclick="toggle('.look-out'); toggle('.beta'); toggle('body')"
+      ></i>
+      <div class="look-out-item" style="margin-top: -50px">
+        <div class="carousel">
+          <div
+            class="carousel-images"
+            id="add-images"
+            style="scroll-behavior: smooth"
+          ></div>
+          <div class="carousel-indicators" id="add-indicators"></div>
+
+          <div class="carousel-title">
+            <span id="add-title"></span>
+            <div class="carousel-subtitle" id="add-subtitle"></div>
+          </div>
+        </div>
+        <div class="look-out-item">
+          <div class="accordion">
+            <div class="accordion-head">
+              Sizes
+              <i class="fa-solid fa-angle-down font-inherit"></i>
+            </div>
+            <div class="accordion-body no-padding">
+              <div
+                class="grid col-5"
+                id="add-sizes"
+                style="margin-top: 0.1rem"
+              ></div>
+            </div>
+            <div class="accordion-head">
+              Composition
+              <i class="fa-solid fa-angle-down font-inherit"></i>
+            </div>
+            <div class="accordion-body no-padding">
+              <div class="grid col-3" style="margin-top: 0.1rem">
+                <div class="grid-item Composition">
+                  <div class="title">100</div>
+                  POLYGON
+                </div>
+                <div class="grid-item Composition">
+                  <div class="title">200</div>
+                  RUBBER
+                </div>
+                <div class="grid-item Composition">
+                  <div class="title">300</div>
+                  SYNTHETIC
+                </div>
+              </div>
+            </div>
+            <div class="accordion-head">
+              Description
+              <i class="fa-solid fa-angle-down font-inherit"></i>
+            </div>
+            <div class="accordion-body no-padding">
+              <div class="description" id="add-description"></div>
+            </div>
+          </div>
+          <button class="look-out-button" onclick="window.buttonRiple(event)">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="controller.js"></script>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+.accordion{
+    .accordion-head{
+        background: white;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2em 1.6em;
+        font-weight: bold;
+        font-size: 1.3rem;
+        transition: 150ms;
+        &:hover{
+            background-color: lighten($color: #696b6d, $amount: 5%);
+            color: white;
+        }
+        &.active{
+            i{
+                transform: rotate(180deg);
+            }
+            background-color: #565656;
+            color: white;
+        }
+    }
+    .accordion-body{
+        max-height: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: 150ms ease-in-out;
+        padding: 0 1.6em;
+        
+        &.active{
+            padding: 1.2em 1.6em;
+            max-height: 200px;
+        }
+        .accordion-item{
+            width: 100%;
+            padding: 1rem 1.5rem;
+            font-family: 'Poppins';
+            font-weight: 600;
+            transition: 350ms;
+            &:not(:last-child){
+                border-bottom: 1px solid #ccc;
+            }
+            &:hover, &.active{
+                background-color: #565656;
+                color: white;
+            }
+        }
+        
+    }
+}

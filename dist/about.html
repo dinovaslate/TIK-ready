@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/about.d44d7e9c.css">
+    <script src="https://kit.fontawesome.com/add302fba6.js" crossorigin="anonymous"></script>
+  <script src="/about.d44d7e9c.js"></script><script src="/App.js"></script></head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="navbar border-1">
+      <div class="navbar-brand">
+        <i class="fa-solid fa-bars font-inherit d-none-large" onclick="window.toggle('.sidebar'); toggle('.backdrop');" style="margin-right: 1.7rem; margin-top: 0.5rem"></i>
+        <div style="display: flex" onclick="location.href = '/App.html';">
+          <span style="align-items: flex-start">Slipp</span>
+          <h2 style="align-items: flex-start; margin-top: -5px">y</h2>
+          <span style="align-items: flex-end; margin-top: 15px">Dripp</span>
+        </div>
+      </div>
+      <div class="links">
+        <li><a href="/index.html">Home</a></li>
+        <li class="active"><a href="/about.html">About</a></li>
+        <li><a href="/App.html">Store</a></li>
+        <div style="position: relative">
+          <li onclick="window.toggle('#menu-sort-3')"><a href="#">Other</a></li>
+          <div class="menu-list" id="menu-sort-3">
+            <li><a href="/cart.html">Cart</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="right-nav">
+        <div style="position: relative" class="truncate">
+          <input type="text" class="search-bar" placeholder="Black Sneakers">
+          <i class="fa-solid fa-magnifying-glass search-icon font-inherit" id="search-icon"></i>
+        </div>
+        <a class="nav-button d-none-small" onclick="window.buttonRiple(event)" href="/login.html">
+          Login
+        </a>
+        <div style="position: relative" onclick="location.href = '/cart.html';" class="d-none-small">
+          <i class="fa-solid fa-bag-shopping font-inherit has-badge"></i>
+          <div class="badge">3</div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="accordion">
+        <a class="accordion-head" href="/index.html">Home</a>
+        <a class="accordion-head active" href="/about.html">About Us</a>
+        <a class="accordion-head" href="/App.html">App</a>
+        <div class="accordion-head collapse">
+          Others
+          <i class="fa-solid fa-angle-down font-inherit"></i>
+        </div>
+        <div class="accordion-body">
+          <a class="accordion-item active" href="/cart.html">Cart</a>
+        </div>
+      </div>
+
+      <div class="sidebar-item">
+        <div class="box black">
+          <div class="content">
+            <div class="title">
+              <div class="iconbox">
+                <i class="fa-solid fa-lightbulb font-inherit"></i>
+              </div>
+              Need Help
+            </div>
+            <div class="text">
+              Visit Our Contact Page. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit.
+            </div>
+          </div>
+          <div class="box blue"></div>
+          <div class="box orange"></div>
+        </div>
+      </div>
+    </div>
+    <section style="
+        --color: rgba(37, 29, 29, 0.9);
+        --radius: 200px;
+        --max-height: 900px;
+      " class="circle-bottom modif">
+      <div class="container no-gap" style="--text-color: white">
+        <h1>About Slippy Dripp</h1>
+        <br>
+        <p class="lead" style="text-align: justify; display: block">
+          Slippy Dripp is an online shoe store that resells high-quality
+          original shoes at the best prices. Our shop guarantees the
+          authenticity of the products we sell, every item we sell goes through
+          our proprietary multi-step verification process with our team of
+          expert authenticators. In our shoe store, you can find shoes from
+          Nike, Adidas, Puma, and Rebook. These shoes have various sizes and
+          color variants that suit the customers' personal preferences. Whether
+          it’s pre-release, regionally limited, or even the ones that are sold
+          out in other mediocre stores – our non-stop shoes supply from over
+          200+ official product distributors allows you to easily secure those
+          hard-to-find, coveted items. The reason our store is different and
+          better than the other stores by a fine margin is that not only do we
+          bring you the best quality shoes but Slippy Dripp also guarantees the
+          speed in bringing the goods you ordered quickly, safely, and
+          precisely, hence why our store tagline is "Get your drip in a blip".
+          This shop was created by group 2 whose members include Ali
+          Abdurrahman, Arkan Fadhil Kautsar, Fadlan Hadif Rafidhan and Haekal
+          Alexander Dinova.
+        </p>
+        <br>
+        <a class="nav-button" style="font-size: 1.7rem; font-weight: 400; cursor: pointer" onclick="window.buttonRiple(event)" href="#megagay">
+          See More
+        </a>
+      </div>
+    </section>
+    <section class="kartunama circle-top" style="--radius: 250px; --next-color: rgb(18,18,18)" id="megagay">
+      <div class="container large-gap">
+        <h1>Meet Our team</h1>
+        <p class="lead" style="text-align: justify; display: block">
+          The team that work so hard. Meet the members of the extraordinary
+          Group 2!
+        </p>
+        <br>
+        <div class="cards">
+          <div class="arkan" id="arkan3">
+            <img src="/fadlanhadif.7b766da4.jpg" class="barco">
+            <h4 class="title">Fadlan Hadif R.</h4>
+            <h5 class="subtitle">fadlan10hadif@gmail.com</h5>
+            <div class="sosmed">
+              <button class="btn">
+                <i class="fa-brands fa-twitter font-inherit"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-brands fa-instagram font-inherit"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-brands fa-facebook font-inherit"></i>
+              </button>
+            </div>
+            <button class="btn" onclick="toggleCard('#arkan3')">
+              See More
+            </button>
+            <div class="footer">
+              <div class="badges">Slippy Dripp Company</div>
+              <p>Web Developer</p>
+            </div>
+            <div class="desc">
+              <b class="close-btn" onclick="toggleCard('#arkan3')">X</b>
+              <h2 style="text-align: center; margin-bottom: 1rem; font-size: 28px">
+                Description
+              </h2>
+              Ada lagi bala yang rame, Balaraja. Banyak pramugari kan disana
+              jadi heboh hahahaha hohohoho hohohoho Janji gak hohoho? :point_up:
+              :sobbing: Five Nights at Freddy's is a horror video game in which
+              you must survive after five nights at Freddy Fazbear's Pizza from
+              the dangers of animatronic characters. Your mission is to try to
+              survive five nights at Freddy Fazbear's Pizza, where strange
+              events often happen.
+            </div>
+            <div class="backdrop card"></div>
+          </div>
+          <div class="arkan" id="arkan4">
+            <img src="/aliabdu.3d5178a7.png" class="barco">
+            <h4 class="title">Ali Abdurrahman</h4>
+            <h5 class="subtitle">sendalswallow789@gmail.com</h5>
+            <div class="sosmed">
+              <button class="btn">
+                <i class="fa-brands fa-twitter font-inherit"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-brands fa-instagram font-inherit"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-brands fa-facebook font-inherit"></i>
+              </button>
+            </div>
+            <button class="btn" onclick="toggleCard('#arkan4')">
+              See More
+            </button>
+            <div class="footer">
+              <div class="badges">Slippy Dripp Company</div>
+              <p>Web Developer</p>
+            </div>
+            <div class="desc">
+              <b class="close-btn" onclick="toggleCard('#arkan4')">X</b>
+              <h2 style="text-align: center; margin-bottom: 1rem; font-size: 28px">
+                Description
+              </h2>
+              Pro Jumpshot Bermuda ~ Pantun <br>
+              Ke Jakarta membeli batagor -cakep Jika ingin yang setia inilah aku
+              sang editor yahahaha hayuk ~@FF_4L1 Tears stream down your face
+              When you lose something you cannot replace Tears stream down your
+              face and I Tears stream down your face I promise you I will learn
+              from my mistakes Tears stream down your face and I Lights will
+              guide you home And ignite your bones And I will try to fix you
+            </div>
+            <div class="backdrop card"></div>
+          </div>
+          <div class="modified">
+            <div class="arkan" id="arkan2">
+              <img src="/haekaldin.a2f74159.png" class="barco">
+              <h4 class="title">Haekal A. Dinova</h4>
+              <h5 class="subtitle">dinovasala3@gmail.com</h5>
+              <h5 class="subtitle2">Full Stack Web/App</h5>
+              <button class="btn" onclick="toggleCard('#arkan2')">
+                See More
+              </button>
+              <div class="sosmed">
+                <button class="btn">
+                  <i class="fa-brands fa-twitter font-inherit"></i>
+                </button>
+                <button class="btn">
+                  <i class="fa-brands fa-instagram font-inherit"></i>
+                </button>
+                <button class="btn">
+                  <i class="fa-brands fa-facebook font-inherit"></i>
+                </button>
+              </div>
+
+              <div class="desc">
+                <b class="close-btn" onclick="toggleCard('#arkan2')">X</b>
+                <h2 style="
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    font-size: 28px;
+                  ">
+                  Description
+                </h2>
+                Full stack developer handal programming. Berencana freelance tahun ini juga
+              </div>
+              <div class="backdrop card"></div>
+            </div>
+          </div>
+          <div class="modified">
+            <div class="arkan" id="arkan1">
+              <img src="/arkanfadhil.5033a808.png" class="barco">
+              <h4 class="title">Arkan Fadhil K.</h4>
+              <h5 class="subtitle">arkanfadhil.25@gmail.com</h5>
+              <h5 class="subtitle2">Web developer</h5>
+              <button class="btn" onclick="toggleCard('#arkan1')">
+                See More
+              </button>
+              <div class="sosmed">
+                <button class="btn">
+                  <i class="fa-brands fa-twitter font-inherit"></i>
+                </button>
+                <button class="btn">
+                  <i class="fa-brands fa-instagram font-inherit"></i>
+                </button>
+
+                <button class="btn">
+                  <i class="fa-brands fa-facebook font-inherit"></i>
+                </button>
+              </div>
+
+              <div class="desc">
+                <b class="close-btn" onclick="toggleCard('#arkan1')">X</b>
+                <h2 style="
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    font-size: 28px;
+                  ">
+                  Description
+                </h2>
+                Si paling si paling. Suka banget sama ikan yang kalo berenang
+                suka tibas-tiba berhenti (ikan pause) :sweat_smile: :point_up:
+                Ngabuburit paling seneng sambil minum es teh manis dan ngemilin
+                kuaci. Temennya woody yang kayak gitar kendaraan umum rajin
+                belajar yang buat ngeringin baju. When you try your best, but
+                you don't succeed When you get what you want, but not what you
+                need When you love someone, but it goes to waste Could it be
+                worse?
+              </div>
+              <div class="backdrop card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="
+        --color: rgb(18,18,18);
+        --radius: 80px;
+        --max-height: 900px;
+        --next-color: rgb(50, 50, 50);
+      " class="cutting-edge remove-edge-on-small">
+      <div class="container no-gap" style="--text-color: white">
+        <h1>History of us</h1>
+        <br>
+
+        <br>
+        <p class="lead" style="text-align: justify; display: block">
+          This fabulous group of individuals was brought together for the sole
+          purpose of completing a group assignment in the Information and
+          Technology class by our teacher, Mr. Sukron. The assignment was given
+          on April 7th with a deadline of April 28th. The task given to us was
+          to make an online shopping website using HTML, CSS, and Javascript,
+          which have been taught to us this past academic year. We chose to sell
+          shoes on our online shopping website. The idea was to make a simple
+          yet sophisticated and stylish website design. This store would not
+          have been possible but for the help, we got from the people among us.
+          By making this project, we hope that our web programming knowledge and
+          skill will be improved through online literacy and discussion with one
+          another. Thank you and we hope you're going to like and make good of
+          our website. Who knows what good can this website project bring?
+        </p>
+      </div>
+    </section>
+    <section class="hide-on-below-570" style="--color: rgb(50, 50, 50); --max-height: 300px">
+      <div class="container fluid" style="--text-color: white; align-items: unset">
+        <div class="footerflex">
+          <div class="footer-brand">
+            <div style="display: flex">
+              <span style="align-items: flex-start; font-size: 36px">Slipp</span>
+              <h2 style="align-items: flex-start; margin-top: -5px">y</h2>
+              <span style="align-items: flex-end; font-size: 36px; margin-top: 15px">Dripp</span>
+            </div>
+            <div class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              laborum eos omnis amet provident cupiditate a inventore mollitia,
+              quaerat perferendis, maxime vitae pariatur. Odio saepe, aut ipsa
+              ipsam incidunt porro!
+            </div>
+          </div>
+          <div class="links">
+            <div class="link">
+              <div class="link-header">Product</div>
+              <li>Shirt</li>
+              <li>Shoe</li>
+              <li>Backpack</li>
+              <li>Laptops</li>
+            </div>
+            <div class="link">
+              <div class="link-header">Industries</div>
+              <li>Ecommerce</li>
+              <li>Restaurant</li>
+              <li>Schools</li>
+              <li>Tech</li>
+            </div>
+            <div class="link">
+              <div class="link-header">Pages</div>
+              <li>Home</li>
+              <li>About</li>
+              <li>Ecommerce</li>
+              <li>Cart</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="--color: rgb(13, 13, 13); min-height: 40px">
+      <div class="container fluid" style="--text-color: white; align-items: unset">
+        <div class="copyright">
+          <b>&copy; 2022 Slippy Dripp</b>
+          <ul>
+            <li>Terms of use</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script>var toggleCard = function toggleCard(elem) {
+  var query = document.querySelector(elem);
+  query.querySelector(".barco").classList.toggle("active");
+  query.querySelector(".backdrop").classList.toggle("active");
+  query.querySelector(".desc").classList.toggle("active");
+};</script>
+    <script src="/navbarSidebar.7c751bc0.js"></script>
+  </body>
+</html>

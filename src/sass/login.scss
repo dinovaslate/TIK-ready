@@ -1,0 +1,193 @@
+@import "component/navbar.scss";
+@import "component/sidebar.scss";
+@import "utils/reset.scss";
+  html {
+    font-family: "Poppins";
+  }
+  body {
+    font-family: "Poppins";
+  }
+  .flexible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar{
+    a{
+        display: contents;
+        all: unset;
+    }
+  }
+  a{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+  .nav-button {
+    padding: 0.6rem 1rem;
+    font-family: "Poppins";
+    font-weight: bold;
+    background-color: #565656;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+  .center {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    top: 58%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0.7rem 3px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    width: min(500px, 80vw);
+  }
+  form {
+    font-family: "Poppins";
+    width: 100%;
+  }
+  .container1 {
+    padding: 1rem;
+  }
+  .input {
+    margin-block-start: 0.5rem;
+    margin-block-end: 1rem;
+  }
+  .input-group {
+    position: relative;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  .gap-1 {
+    gap: 5px;
+  }
+  .gap-2 {
+    gap: 10px;
+  }
+  .label {
+    font-weight: 600;
+    margin-inline-start: 1px;
+  }
+  .mt-1 {
+    margin-block-start: 1.8rem !important;
+  }
+  .input-group-text {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .absolute-right {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    background-color: #fff;
+    padding: 5px;
+  }
+  input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-family: "Poppins" !important;
+    -webkit-transition: width 0.35s ease-in-out;
+    transition: width 0.35s ease-in-out;
+  }
+  .search-bar {
+    font-size: 0.8rem !important;
+  }
+  input[type="password"] {
+    -webkit-transition: width 0.35s ease-in-out;
+    transition: width 0.35s ease-in-out;
+  }
+  .invalid {
+    border: 2px solid red;
+  }
+  .parts {
+    flex-shrink: 0;
+    width: 50%;
+    height: 100vh;
+  }
+  .part-2 {
+    background-color: rgb(154, 154, 154);
+    position: relative;
+  }
+  .merah {
+    color: red;
+  }
+  .button {
+    padding: 0.7rem 1.2rem !important;
+    font-size: 15px;
+    width: 100% !important;
+  }
+  .big-label {
+    background-color: #565656;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.9rem 1.4rem;
+    position: absolute;
+    top: -1.7rem;
+    width: fit-content;
+  }
+  form {
+    padding-top: 1.5rem !important;
+  }
+  .logo {
+    max-width: 6rem;
+    filter: invert(98%);
+    position: absolute;
+    left: 20px;
+    top: 10rem;
+  }
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .mw-60 {
+    min-width: 85px;
+  }
+  input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  input[type="radio"]::before {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    aspect-ratio: 1/1;
+    border: 1px solid rgb(128, 128, 128);
+    transition: 300ms;
+  }
+  input[type="radio"]:checked:before {
+    box-shadow: inset 0 0 0 6px black;
+  }
+  input[type="radio"] {
+    flex-basis: 30px;
+  }
+  .radlab {
+    text-align: left !important;
+  }
+  .d-none {
+    display: none !important;
+  }
+
+ 
+@media (max-height:980px) {
+    .center{
+        top: 50vh;
+        transform: translateY(-50%);
+    }
+
+}
+  @media (max-height:740px) {
+    .center{
+        top: 60vh;
+    }
+
+}

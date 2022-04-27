@@ -1,0 +1,16 @@
+span.ripple{
+    width: 1rem;
+    aspect-ratio: 1/1;
+    transform: scale(0);
+    border-radius: 50%;
+    position: absolute;
+    animation: large 600ms linear;
+    background-color:var(--color);
+    opacity: 0.7;
+}
+@keyframes large {
+    to{
+        transform: scale(var(--size));
+        opacity: 0;
+    }   
+}

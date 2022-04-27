@@ -1,0 +1,80 @@
+@import "subcomponent/accordion.scss";
+@import "../utils/ripple.scss";
+.sidebar{
+    width: 330px;
+    height: 100vh;
+    position: fixed;
+    top: 10px;
+    transition: 500ms ease-in-out;
+    margin-top: 4.5rem;
+    box-shadow: 3px 0 10px 1px lighten($color: #000000, $amount: 70%);
+    background-color: white;
+    @media (max-height: 862px){
+        overflow-y:auto ;
+        padding-block-end: 10rem;
+    }
+    
+        transform: translateX(-100%);
+        z-index: 9998;
+        
+        &.active{
+            transform: translateX(0) !important;
+        }
+    
+    
+    .sidebar-item{
+        .box{
+            padding: 1rem;
+            color: white;
+            .text{
+                margin-left: 3rem;
+                text-align: justify;
+                position: relative;
+                z-index: 2;
+            }
+            .title{
+                position: relative;
+                z-index: 2;
+                .iconbox{
+                    background-color: #ff8a4a;
+                    width: fit-content;
+                    padding: 0.6rem;
+                    aspect-ratio: 1/1;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    display: inline-block;
+                    margin-right: 0.6rem;
+                }
+                font-weight: bold;
+                font-size: 20px;
+            }
+            &.black{
+                background-color: #333333;
+                position: relative;
+            }
+            &.blue{
+                background-color: #2bd5eba8;
+                position: absolute;
+                inset: 0;
+                clip-path: circle(35% at 0 85%);
+                z-index: 1;
+            }
+            &.orange{
+                background-color: #565656;
+                position: absolute;
+                inset: 0;
+                clip-path: circle(30% at 90% 95%);
+                z-index: 1;
+            }
+        }
+        border-top: 1px solid #ccc;
+        padding: 1.7rem 2rem;
+        &-title{
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+      
+    }
+    
+}

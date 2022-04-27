@@ -1,0 +1,6 @@
+.d-none-large{
+    display: var(--display, none) !important;
+    @media (max-width:960px) {
+        --display:inline-block
+    }
+}
