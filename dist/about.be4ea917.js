@@ -117,86 +117,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"scripts/navbarSidebar.js":[function(require,module,exports) {
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-var toggle = function toggle(qs) {
-  document.querySelector(qs).classList.toggle("active");
+})({"about.js":[function(require,module,exports) {
+var toggleCard = function toggleCard(elem) {
+  var query = document.querySelector(elem);
+  query.querySelector(".barco").classList.toggle("active");
+  query.querySelector(".backdrop").classList.toggle("active");
+  query.querySelector(".desc").classList.toggle("active");
 };
 
-window.toggle = toggle;
-var collapse = document.querySelector(".collapse");
-collapse.addEventListener("click", function (event) {
-  collapse.classList.toggle("active");
-  collapse.nextSibling.nextSibling.classList.toggle("active");
-});
-var accheads = document.querySelectorAll(".accordion-head");
-
-var _iterator = _createForOfIteratorHelper(accheads),
-    _step;
-
-try {
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    var acchead = _step.value;
-    acchead.addEventListener("click", function (event) {
-      ripple(event.currentTarget, event, 100, "#ccc");
-    });
-  }
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
-}
-
-window.ripple = function ripple(parent, event, maxScale, color) {
-  parent.style.position = "relative";
-  parent.style.overflow = "hidden";
-  var rect = parent.getBoundingClientRect();
-  var ripple = document.createElement("span");
-  ripple.classList.add("ripple");
-  ripple.style.left = "".concat(event.clientX - rect.x, "px");
-  ripple.style.top = "".concat(event.clientY - rect.y, "px");
-  ripple.style.setProperty("--size", maxScale);
-  ripple.style.setProperty("--color", color);
-  var hasripple = parent.getElementsByClassName("ripple")[0];
-
-  if (hasripple) {
-    hasripple.remove();
-  }
-
-  parent.appendChild(ripple);
-  setTimeout(function () {
-    ripple.remove();
-  }, 1200);
-};
-
-var buttonRiple = function buttonRiple(event) {
-  var color = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "#fff6";
-  ripple(event.currentTarget, event, 20, color);
-};
-
-window.buttonRiple = buttonRiple;
-var lis = document.querySelectorAll("li");
-
-var _iterator2 = _createForOfIteratorHelper(lis),
-    _step2;
-
-try {
-  for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-    var li = _step2.value;
-    li.addEventListener("click", function (e) {
-      buttonRiple(e, "#ccc");
-    });
-  }
-} catch (err) {
-  _iterator2.e(err);
-} finally {
-  _iterator2.f();
-}
+window.toggleCard = toggleCard;
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -401,5 +330,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts/navbarSidebar.js"], null)
-//# sourceMappingURL=/navbarSidebar.7c751bc0.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","about.js"], null)
+//# sourceMappingURL=/about.be4ea917.js.map
