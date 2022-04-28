@@ -140,7 +140,7 @@ const proxy = new Proxy(Shoes, {
 });
 
 const setTopProduct = () => {
-  const shoes = Shoes.getTop(3);
+  const shoes = Shoes.getTop(8);
   const host = document.querySelector(".flex-card");
   if (host.hasChildNodes()) host.replaceChildren();
   for (const shoe of shoes) {
