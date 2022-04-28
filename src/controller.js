@@ -144,7 +144,7 @@ const setTopProduct = () => {
   const host = document.querySelector(".flex-card");
   if (host.hasChildNodes()) host.replaceChildren();
   for (const shoe of shoes) {
-    const cardToAdd = `<div class="horizontal-card">
+    const cardToAdd = `<div class="horizontal-card" onclick="toggle('.look-out'); toggle('.beta'); toggle('body'); lookOut('${shoe.name}')" >
         <div class="card-image">
           <img src="${shoe.images[0]}" width="90" alt="${shoe.type}" />
         </div>
