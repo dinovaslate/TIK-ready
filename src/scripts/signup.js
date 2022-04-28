@@ -85,12 +85,14 @@ window.toggle1 = toggle1;
   };
   window.myFunction = myFunction;
   const toggle2 = (e) => {
-    const email = document.querySelector("#email");
-    const phone = document.querySelector("#phone");
+    const email = document.querySelector("#emails");
+    const phone = document.querySelector("#phones");
+    const emailinp = document.querySelector("#email");
+    const phoneinp = document.querySelector("#phone");
     email.classList.toggle("d-none");
     phone.classList.toggle("d-none");
-    email.toggleAttribute("required");
-    phone.toggleAttribute("required");
+    emailinp.toggleAttribute("required");
+    phoneinp.toggleAttribute("required");
     e.currentTarget.innerText = `Use ${
       email.classList.contains("d-none") ? "email" : "phone number"
     } `;
