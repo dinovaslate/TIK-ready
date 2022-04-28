@@ -6,11 +6,17 @@
   }
   body {
     font-family: "Poppins";
+    @media (min-height:950px) {
+      overflow: hidden;
+    }
   }
   .flexible{
+    background: linear-gradient(to right, #ffff, #ffff 50%, rgb(154,154,154) 50%, rgb(154,154,154));
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: max(95vh, 950px);
   }
   .navbar {
     display: flex;
@@ -19,6 +25,12 @@
     box-shadow: 1px 3px 3px black;
     padding-left: 0;
     padding-right: 0;
+    a{
+      display: contents;
+      all: unset;
+  }
+  }
+  .sidebar{
     a{
       display: contents;
       all: unset;
@@ -40,13 +52,11 @@
 }
 
   .center {
+    position: relative;
     display: flex;
-    position: absolute;
     justify-content: center;
     align-items: center;
     background-color: white;
-    top: 58%;
-    transform: translateY(-50%);
     box-shadow: 0 0 0.7rem 3px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
     width: min(500px, 80vw);
@@ -111,15 +121,7 @@
   .invalid {
     border: 2px solid red;
   }
-  .parts {
-    flex-shrink: 0;
-    width: 50%;
-    height: 100vh;
-  }
-  .part-2 {
-    background-color: rgb(154, 154, 154);
-    position: relative;
-  }
+
   .merah {
     color: red;
   }
@@ -145,7 +147,11 @@
     max-width: 6rem;
     filter: invert(98%);
     position: absolute;
-    left: 20px;
+    left: 60%;
+    @media (max-width:420px) {
+      left: 70%;
+    }
+    transform: translate(-50%, -50%);
     top: 10rem;
   }
   .flex-column {
@@ -182,40 +188,3 @@
   .d-none {
     display: none !important;
   }
-@media (max-width:480px) {
-    body{
-        overflow-y: hidden !important;
-    }
-}
-  @media (max-height:980px){
-
-    .part-2{
-        position: fixed !important;
-        inset: 0 0 0 auto;
-    }
-    body{
-        height: 120vh;
-    }
-}
-  @media (max-height:880px) {
-
-      .part-2{
-          position: fixed !important;
-          inset: 0 0 0 auto;
-      }
-      body{
-          height: 130vh;
-      }
-  }
-  @media (max-height:780px) {
-    .center{
-        top: 90vh;
-    }
-    .part-2{
-        position: fixed !important;
-        inset: 0 0 0 auto;
-    }
-    body{
-        height: 150vh;
-    }
-}

@@ -50,6 +50,7 @@
         </a>
         <i
           class="fa-solid fa-arrow-right-to-bracket font-inherit d-block-small"
+          onclick="location.href = '/login.html';"
         ></i>
         <div class="sort" onclick="window.toggle('#menu-sort-3')">
           <i
@@ -57,9 +58,9 @@
             style="margin-top: 2px"
           ></i>
           <div class="menu-list right" id="menu-sort-3">
-            <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="cart.html">Cart</a></li>
+            <li onclick="location.href = '/index.html';">Home</li>
+        <li onclick="location.href = '/about.html';">About</li>
+        <li onclick="location.href = '/cart.html';">Cart</li>
           </div>
         </div>
         <div style="position: relative" onclick="location.href = '/cart.html';" class="d-none-small">
@@ -295,6 +296,7 @@
     </div>
     <script src="index.js"></script>
     <script src="controller.js"></script>
+    <script src="scripts/lookout_bubbling.js"></script>
     <script></script>
   </body>
 </html>

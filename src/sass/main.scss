@@ -846,18 +846,14 @@ body{
             &:last-child{
                 border: none;
             }
-            &:hover{
+            &:hover, & a{
                 background-color: rgba($color: #565656, $alpha: 0.7);
-                a{
-                    color: white;
-                }
+                color: white;
             }
-            &.active{
+            &.active, & a{
                 background-color: #333333;
-                a{
-                    color: white;
-                    font-weight: bold !important;
-                }
+                color: white;
+                font-weight: bold !important;
             }
         }
     }

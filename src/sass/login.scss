@@ -8,9 +8,12 @@
     font-family: "Poppins";
   }
   .flexible{
+    background: linear-gradient(to right, #ffff, #ffff 50%, rgb(154,154,154) 50%, rgb(154,154,154));
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: max(95vh, 950px);
   }
   .navbar{
     a{
@@ -33,18 +36,18 @@
     border: none;
     border-radius: 5px;
 }
-  .center {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    top: 58%;
-    transform: translateY(-50%);
-    box-shadow: 0 0 0.7rem 3px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem;
-    width: min(500px, 80vw);
-  }
+.center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 0.7rem 3px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: min(500px, 80vw);
+    margin-bottom: 15rem;
+
+}
   form {
     font-family: "Poppins";
     width: 100%;
@@ -110,6 +113,12 @@
     width: 50%;
     height: 100vh;
   }
+  .sidebar{
+    a{
+      display: contents;
+      all: unset;
+    }
+  }
   .part-2 {
     background-color: rgb(154, 154, 154);
     position: relative;
@@ -139,7 +148,11 @@
     max-width: 6rem;
     filter: invert(98%);
     position: absolute;
-    left: 20px;
+    left: 60%;
+    @media (max-width:420px) {
+      left: 70%;
+    }
+    transform: translate(-50%, -50%);
     top: 10rem;
   }
   .flex-column {
@@ -176,18 +189,3 @@
   .d-none {
     display: none !important;
   }
-
- 
-@media (max-height:980px) {
-    .center{
-        top: 50vh;
-        transform: translateY(-50%);
-    }
-
-}
-  @media (max-height:740px) {
-    .center{
-        top: 60vh;
-    }
-
-}
