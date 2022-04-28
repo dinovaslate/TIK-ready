@@ -1,19 +1,26 @@
-const myFunction = (x) => {
-  const bubbling = (e) => {
-    const lookout = document.querySelector(".look-out");
-    const toggler = document.querySelector(".card");
-    const backdrop = document.querySelector(".beta");
-    if (lookout.classList.contains("active")) {
-      if (!lookout.contains(e.target) && !toggler.contains(e.target)) {
-        lookout.classList.remove("active");
-        backdrop.classList.remove("active");
-      }
-    }
-  };
-  if (x.matches) {
+const lookout = document.querySelector(".look-out");
+const backdrop = document.querySelector(".beta");
+const bubbling = (e) => {
+  if (!lookout.contains(e.target)) {
+    lookout.classList.remove("active");
+    backdrop.classList.remove("active");
+    document.body.classList.remove("active");
+    removeListener();
+  }
+};
+const isOn = () => {
+  if (lookout.classList.contains("active")) {
     document.addEventListener("click", bubbling);
+  }
+};
+const removeListener = () => {
+  document.removeEventListener("click", bubbling);
+};
+const myFunction = (x) => {
+  if (x.matches) {
+    document.addEventListener("click", isOn);
   } else {
-    document.removeEventListener("click", bubbling);
+    document.removeEventListener("click", isOn);
   }
 };
 let y = window.matchMedia("(max-width: 1035px)");
