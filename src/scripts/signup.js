@@ -85,8 +85,8 @@ window.toggle1 = toggle1;
   };
   window.myFunction = myFunction;
   const toggle2 = (e) => {
-    const email = document.querySelector("#emails");
-    const phone = document.querySelector("#phones");
+    const email = document.querySelector("#email");
+    const phone = document.querySelector("#phone");
     email.classList.toggle("d-none");
     phone.classList.toggle("d-none");
     email.toggleAttribute("required");
