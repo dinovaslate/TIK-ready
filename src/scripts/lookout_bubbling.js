@@ -1,14 +1,15 @@
 const lookout = document.querySelector(".look-out");
 const backdrop = document.querySelector(".beta");
+const closeBTN = document.querySelector(".closer");
 const bubbling = (e) => {
-  if (!lookout.contains(e.target)) {
+  if (!lookout.contains(e.target) || closeBTN.contains(e.target)) {
     lookout.classList.remove("active");
     backdrop.classList.remove("active");
     document.body.classList.remove("active");
     removeListener();
   }
 };
-const isOn = () => {
+const isOn = (e) => {
   if (lookout.classList.contains("active")) {
     document.addEventListener("click", bubbling);
   }
